@@ -5,8 +5,10 @@
   "homepage": "https://rand0me.github.io/css-in-js-presentation",
   "dependencies": {
     "gh-pages": "^1.1.0",
+    "raw-loader": "^0.5.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "spectacle-code-slide": "^0.5.2",
     "spectacle-scripts": "2.0.0"
   },
   "scripts": {
