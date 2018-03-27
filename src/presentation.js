@@ -26,13 +26,16 @@ import createTheme from "spectacle/lib/themes/default";
 require("normalize.css");
 
 const links = {
-  general: "https://objectpartners.com/2017/11/03/css-in-js-benefits-drawbacks-and-tooling/",
+  general:
+    "https://objectpartners.com/2017/11/03/css-in-js-benefits-drawbacks-and-tooling/",
   styled: "https://github.com/styled-components/awesome-styled-components",
   cssinjs: "https://github.com/tuchk4/awesome-css-in-js",
   cantsee: "https://www.youtube.com/watch?v=BXOF_8jDdf8",
-  hackern: "https://hackernoon.com/i-swore-never-to-use-css-in-js-here-are-6-reasons-why-i-was-wrong-541fe3dfdeb7",
-  medium:  "https://medium.com/@steida/css-in-js-the-argument-refined-471c7eb83955"
-}
+  hackern:
+    "https://hackernoon.com/i-swore-never-to-use-css-in-js-here-are-6-reasons-why-i-was-wrong-541fe3dfdeb7",
+  medium:
+    "https://medium.com/@steida/css-in-js-the-argument-refined-471c7eb83955"
+};
 
 /* eslint import/no-webpack-loader-syntax: "off" */
 
@@ -57,11 +60,7 @@ export default class Presentation extends React.Component {
         transitionDuration={500}
         theme={theme}
       >
-        <Slide
-          transition={["zoom"]}
-          bgColor="primary"
-          style={{ backgroundImage: require("./img/koschei.jpg") }}
-        >
+        <Slide transition={["zoom"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             CSS in JS
           </Heading>
@@ -70,7 +69,7 @@ export default class Presentation extends React.Component {
           </Text>
           <Image src={require("./img/koschei.jpg")} />
         </Slide>
-        <Slide transition={["zoom"]} bgColor="primary">
+        <Slide transition={["zoom"]} bgColor="primary" notes="Dec 1990 - NeXT - Tim Berners-Lee<br/>1992 - Viola - Pei Wei<br/>1994 - CSS - Bert Bos">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Немного истории
           </Heading>
@@ -155,7 +154,7 @@ export default class Presentation extends React.Component {
               title: "LETS POSHUKAEM REACT?",
               image: "https://i.giphy.com/media/qmfpjpAT2fJRK/giphy.webp"
             },
-            { loc: [ 3, 11] },
+            { loc: [3, 11] },
             { loc: [12, 18] }
           ]}
         />
@@ -179,14 +178,10 @@ export default class Presentation extends React.Component {
           transition={[]}
           lang="js"
           code={require("!!raw-loader!./snippets/glamorous.js")}
-          ranges={[
-            { loc: [0, 2] },
-            { loc: [3, 9] },
-            { loc: [9, 10] }
-          ]}
+          ranges={[{ loc: [0, 2] }, { loc: [3, 9] }, { loc: [9, 10] }]}
         />
         <Slide transition={["fade"]} bgColor={"secondary"}>
-          <Image src={ require('./img/misha.jpg') } />
+          <Image src={require("./img/misha.jpg")} />
           <Text textColor="tertiary">
             Миша, тебе с таким реактом денег никто не даст!
           </Text>
@@ -195,13 +190,13 @@ export default class Presentation extends React.Component {
           lang="js"
           code={require("!!raw-loader!./snippets/jss.js")}
           ranges={[
-            { loc: [ 0, 3] },
-            { loc: [ 4, 6] },
-            { loc: [ 8,14] },
-            { loc: [14,22] },
-            { loc: [22,27] },
-            { loc: [29,31] },
-            { loc: [32,40] }
+            { loc: [0, 3] },
+            { loc: [4, 6] },
+            { loc: [8, 14] },
+            { loc: [14, 22] },
+            { loc: [22, 27] },
+            { loc: [29, 31] },
+            { loc: [32, 40] }
           ]}
         />
         <Slide transition={["fade"]} bgColor={"secondary"}>
@@ -211,22 +206,34 @@ export default class Presentation extends React.Component {
           <Heading textColor="secondary">LINKS</Heading>
           <List textColor="primary">
             <ListItem>
-              <Link href={ links.general } textColor="primary"><S type="underline">General Talks</S></Link>
+              <Link href={links.general} textColor="primary">
+                <S type="underline">General Talks</S>
+              </Link>
             </ListItem>
             <ListItem>
-              <Link href={ links.cantsee } textColor="primary"><S type="underline">"Can't see dots" talk</S></Link>
+              <Link href={links.cantsee} textColor="primary">
+                <S type="underline">"Can't see dots" talk</S>
+              </Link>
             </ListItem>
             <ListItem>
-              <Link href={ links.cssinjs } textColor="primary"><S type="underline">Awesome CSS in JS</S></Link>
+              <Link href={links.cssinjs} textColor="primary">
+                <S type="underline">Awesome CSS in JS</S>
+              </Link>
             </ListItem>
             <ListItem>
-              <Link href={ links.styled } textColor="primary"><S type="underline">Awesome Styled Components</S></Link>
+              <Link href={links.styled} textColor="primary">
+                <S type="underline">Awesome Styled Components</S>
+              </Link>
             </ListItem>
             <ListItem>
-              <Link href={ links.medium } textColor="primary"><S type="underline">CSS in JS - Arguments refined</S></Link>
+              <Link href={links.medium} textColor="primary">
+                <S type="underline">CSS in JS - Arguments refined</S>
+              </Link>
             </ListItem>
             <ListItem>
-              <Link href={ links.hackern } textColor="primary"><S type="underline">I swore not to use JSS</S></Link>
+              <Link href={links.hackern} textColor="primary">
+                <S type="underline">I swore not to use JSS</S>
+              </Link>
             </ListItem>
           </List>
         </Slide>
