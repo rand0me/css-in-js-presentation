@@ -1,6 +1,8 @@
 CSS-in-JS Presentation
 ======================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/rand0me/css-in-js-presentation.svg)](https://greenkeeper.io/)
+
 
 ## ToC
 
